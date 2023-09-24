@@ -1,22 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Angela's Portfolio</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Blog</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
-  <h1>Angela Yu's Portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr />
-  <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-  <img src="./assets/images/movie-ranking.png" height="200" alt="movie ranking project preview"/>
-  <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-  <img src="./assets/images/birthday-invite.png" height="200" alt="birthday invite project preview"/>
-  <hr />
-  <a href="./public/about.html">About Me</a>
-  <a href="./public/contact.html">Contact Me</a>
-</body>
+    <header>
+        <h1>Blog Personal - Home</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Acerca de Mí</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="featured">
+            <h2>Bienvenido a Mi Blog Personal</h2>
+            <p>En este espacio, compartiré mis pensamientos, experiencias y conocimientos sobre diversos temas. ¡Espero que disfrutes de la lectura!</p>
+        </section>
+    
+        <section class="latest-posts">
+            <h2>Últimas Publicaciones</h2>
+            <article>
+                <h3>Título del Artículo 1</h3>
+                <p>Fecha: <time datetime="2023-09-25">25 de septiembre de 2023</time></p>
+                <p>Autor: Tu Nombre</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur tortor id augue gravida, ut fermentum turpis aliquam.</p>
+                <a href="/article1">Leer más</a>
+            </article>
+            <article>
+                <h3>Título del Artículo 2</h3>
+                <p>Fecha: <time datetime="2023-09-24">24 de septiembre de 2023</time></p>
+                <p>Autor: Tu Nombre</p>
+                <p>Morbi rhoncus quam eget urna vehicula, ac hendrerit urna placerat. Vivamus vel erat non lorem tristique volutpat eu nec justo.</p>
+                <a href="/article2">Leer más</a>
+            </article>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>Derechos de autor &copy; 2023 - Tu Nombre</p>
+    </footer>
+</body>
 </html>
