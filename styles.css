@@ -1,24 +1,22 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    color: #333;
 }
 
 header {
-    background-color: #007BFF;
+    background-color: #ff6600;
     color: #fff;
-    padding: 20px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
+h1 {
+    font-size: 3rem;
     margin: 0;
-    font-size: 36px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
@@ -26,146 +24,90 @@ nav ul {
     padding: 0;
 }
 
-nav li {
+nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 1.3rem;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #0056b3;
+    color: #ff3300;
 }
 
-main {
+/* Efectos de sección */
+section {
+    margin: 40px auto;
     max-width: 800px;
-    margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-h2 {
-    color: #007BFF;
-    font-size: 28px;
+/* Efectos de animación */
+section h2 {
+    font-size: 2.2rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease;
 }
 
-p {
+section p {
+    color: #333;
+    font-size: 1.2rem;
     line-height: 1.6;
 }
 
-/* Estilos específicos para cada página */
-/* Estilos para la página de inicio */
-.index {
-    background-color: #F5A623;
+/* Efectos de sombra en imágenes */
+.hobby {
+    text-align: center;
+    margin: 20px;
 }
 
-/* Estilos para la página de blog */
-.blog {
-    background-color: #55BF55;
-}
-
-.blog article {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+.hobby img {
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
-.blog article:hover {
-    transform: scale(1.02);
+.hobby img:hover {
+    transform: scale(1.1);
 }
 
-.blog article h3 {
-    color: #007BFF;
-    font-size: 24px;
-    margin-top: 0;
-    transition: color 0.3s ease;
-}
-
-.blog article:hover h3 {
-    color: #0056b3;
-}
-
-/* Estilos para la página "Acerca de Mí" */
-.about {
-    background-color: #FF5959;
-}
-
-.about h3 {
-    color: #fff;
-    font-size: 24px;
-}
-
-/* Estilos para la página de contacto */
-.contact {
-    background-color: #3498DB;
-}
-
-.contact h3 {
-    color: #fff;
-    font-size: 24px;
-}
-
-/* Estilo para el formulario de contacto */
-form {
-    margin-top: 20px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #fff;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form textarea:focus {
-    background-color: #fff;
-}
-
-form button {
-    background-color: #007BFF;
+/* Efectos de botón */
+button {
+    background-color: #ff6600;
     color: #fff;
     padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
 }
 
-form button:hover {
-    background-color: #0056b3;
+button:hover {
+    background-color: #ff3300;
 }
 
-/* Estilos para los enlaces */
-a {
-    color: #007BFF;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #0056b3;
+/* Animación de entrada para títulos */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
