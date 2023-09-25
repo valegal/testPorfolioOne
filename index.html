@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Personal Blog</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
     <header>
-        <h1>Blog Personal - Home</h1>
+        <h1>Blog Personal</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,29 +24,72 @@
             <h2>Bienvenido a Mi Blog Personal</h2>
             <p>En este espacio, compartiré mis pensamientos, experiencias y conocimientos sobre diversos temas. ¡Espero que disfrutes de la lectura!</p>
         </section>
+
+        <section class="about-me">
+            <h2>Acerca de Mí</h2>
+            <p>Soy un apasionado de la tecnología y la ciencia. Desde joven, he estado explorando el mundo de la programación y la investigación científica. Este blog es mi manera de compartir mis descubrimientos contigo.</p>
+        </section>
+
+        <section class="hobbies">
+            <h2>Hobbies e Intereses</h2>
+            <div class="hobby">
+                <img src="/assets/technology.jpg" alt="Tecnología">
+                <p>Tecnología</p>
+            </div>
+            <div class="hobby">
+                <img src="/assets/science.jpg" alt="Ciencia">
+                <p>Ciencia</p>
+            </div>
+            <div class="hobby">
+                <img src="/assets/travel.jpg" alt="Viajes">
+                <p>Viajes</p>
+            </div>
+        </section>
     
         <section class="latest-posts">
             <h2>Últimas Publicaciones</h2>
             <article>
-                <h3>Título del Artículo 1</h3>
+                <h3>Hblando sobre algo</h3>
                 <p>Fecha: <time datetime="2023-09-25">25 de septiembre de 2023</time></p>
-                <p>Autor: Tu Nombre</p>
+                <p>Autor: Marco Julio</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur tortor id augue gravida, ut fermentum turpis aliquam.</p>
                 <a href="/article1">Leer más</a>
             </article>
             <article>
-                <h3>Título del Artículo 2</h3>
+                <h3>Cosas que compartir</h3>
                 <p>Fecha: <time datetime="2023-09-24">24 de septiembre de 2023</time></p>
-                <p>Autor: Tu Nombre</p>
+                <p>Autor: Francis</p>
                 <p>Morbi rhoncus quam eget urna vehicula, ac hendrerit urna placerat. Vivamus vel erat non lorem tristique volutpat eu nec justo.</p>
                 <a href="/article2">Leer más</a>
             </article>
         </section>
+
+        <section class="mini-game">
+            <h2>¡Mini Juego!</h2>
+            <p>¿Puedes adivinar la respuesta correcta a esta adivinanza?</p>
+            <p>What has a neck but no head?</p>
+            <input type="text" id="guess" placeholder="Tu respuesta">
+            <button onclick="checkAnswer()">Comprobar</button>
+            <p id="result"></p>
+        </section>
     </main>
-    
 
     <footer>
         <p>Derechos de autor &copy; 2023 - Tu Nombre</p>
     </footer>
+
+    <!-- JavaScript para el mini juego -->
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById('guess').value.toLowerCase();
+            const resultMessage = document.getElementById('result');
+
+            if (answer === 'bottle') {
+                resultMessage.textContent = '¡Correcto! La respuesta es una sombra.';
+            } else {
+                resultMessage.textContent = 'Incorrecto. Inténtalo de nuevo.';
+            }
+        }
+    </script>
 </body>
 </html>
