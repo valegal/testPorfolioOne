@@ -16,6 +16,7 @@
                 <li><a href="about.html">Acerca de mí</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
+            <button class="theme-toggle" onclick="toggleDarkMode()">Cambiar Tema</button>
         </nav>
     </header>
 
@@ -44,5 +45,12 @@
     <footer>
         <p>Derechos de autor &copy; 2023 - Tu Nombre</p>
     </footer>
+
+    <script>
+        function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+    }
+    </script>
 </body>
 </html>
