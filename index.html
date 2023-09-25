@@ -13,9 +13,10 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">Acerca de Mí</a></li>
+                <li><a href="about.html">Acerca de mí</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
+            <button class="theme-toggle" onclick="toggleDarkMode()">Cambiar Tema</button>
         </nav>
     </header>
 
@@ -80,6 +81,10 @@
 
     <!-- JavaScript para el mini juego -->
     <script>
+        function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+    }
         function checkAnswer() {
             const answer = document.getElementById('guess').value.toLowerCase();
             const resultMessage = document.getElementById('result');
